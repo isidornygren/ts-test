@@ -1,0 +1,27 @@
+{
+  "name": "ts-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "ts-node src/index.ts",
+    "build": "tsc",
+    "test": "ts-node --project tsconfig.json ./src/__tests__/someFolder/scooby.test.ts"
+  },
+  "author": "Isidor Nygren",
+  "license": "ISC",
+  "dependencies": {
+    "eslint-config-isidor": "git+https://github.com/isidornygren/eslint-config-isidor.git",
+    "typescript": "^4.4.3"
+  },
+  "devDependencies": {
+    "@types/node": "^16.11.0",
+    "@types/require-from-string": "^1.2.1",
+    "@typescript-eslint/eslint-plugin": "^4.33.0",
+    "@typescript-eslint/parser": "^4.33.0",
+    "eslint": "^7.32.0",
+    "eslint-plugin-etc": "^1.5.4",
+    "require-from-string": "^2.0.2",
+    "ts-node": "^10.3.0"
+  }
+}

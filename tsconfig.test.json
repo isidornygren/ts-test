@@ -1,0 +1,5 @@
+{
+    "extends": "./tsconfig.json",
+    "include": { "mode": "replace", "values": ["src/**/*.test.ts"]},
+    "exclude": { "mode": "replace", "values": ["node_modules"]},
+}
