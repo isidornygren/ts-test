@@ -17,3 +17,11 @@ export function fetchFiles(currentPath: Readonly<string>): RecursivePaths {
     }
     return currentPath;
 }
+
+export async function importRecursive(paths: RecursivePaths): Promise<void> {
+    if(typeof paths === 'string') {
+        await import(paths);
+    } else {
+        paths.forEach(importRecursive);
+    }
+}
