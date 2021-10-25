@@ -1,3 +1,6 @@
+import * as tsNode from 'ts-node';
+
+const code = `
 import { Command } from "commander";
 import fastGlob from "fast-glob";
 
@@ -17,3 +20,9 @@ program
         runTests(entries, options);
     })
     .parse(process.argv);
+
+`
+
+const compiled = tsNode.register().compile(code, 'C:\\Users\\Isidor\\Projects\\ts-test\\src\\index.ts');
+
+console.log(compiled);
