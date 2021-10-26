@@ -1,21 +1,21 @@
-import { deepEqual, equal, notEqual } from "assert/strict";
 import { add } from "./utils";
+import { strict as assert } from 'assert';
 import { runTest } from "../test";
 
 export function testLocalImportEqual(): void {
-    equal(add(2, 2), 4);
+    assert.equal(add(2, 2), 4);
 }
 
 export function testEqual(): void {
-    equal(4, 4);
+    assert.equal(4, 4);
 }
 
 export function testNotEqual(): void {
-    notEqual(4, 5);
+    assert.notEqual(4, 5);
 }
 
 export function testSuccessfullTest(): void {
-    deepEqual(
+    assert.deepEqual(
         // eslint-disable-next-line no-empty-function, @typescript-eslint/no-empty-function
         runTest(() => {}, "successfullTest"),
         {
@@ -26,7 +26,7 @@ export function testSuccessfullTest(): void {
 }
 
 export function testFailedTest(): void {
-    deepEqual(
+    assert.deepEqual(
         runTest(() => {
             throw new Error("Failed successfully");
         }, "failedTest"),

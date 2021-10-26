@@ -1,6 +1,6 @@
 {
-    "extends": ["eslint-config-isidor"],
-    "parserOptions": {
-        "project": "./tsconfig.json"
-    }
+  "extends": ["eslint-config-isidor"],
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  }
 }

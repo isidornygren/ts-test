@@ -1,24 +1,23 @@
 {
-    "compilerOptions": {
-        "skipLibCheck": true,
-        "lib": ["es5", "es6", "dom"],
-        "target": "ES2016",
-        "module": "commonjs",
-        "moduleResolution": "node",
-        "esModuleInterop": true,
-        "noImplicitAny": true,
-        "removeComments": true,
-        "preserveConstEnums": true,
-        "experimentalDecorators": true,
-        "sourceMap": false,
-        "strict": true,
-        "outDir": "dist",
-        "baseUrl": "./src",
-        "resolveJsonModule": true,
-        "typeRoots": [
-            "./node_modules/@types",
-        ]
-    },
-    "include": ["src/**/*"],
-    "exclude": ["node_modules"],
-  }
+  "compilerOptions": {
+    "alwaysStrict": true,
+    "skipLibCheck": true,
+    "lib": ["es5", "es6", "dom"],
+    "target": "ES2016",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "noImplicitAny": true,
+    "removeComments": true,
+    "preserveConstEnums": true,
+    "experimentalDecorators": true,
+    "sourceMap": false,
+    "strict": true,
+    "outDir": "dist",
+    "baseUrl": "./src",
+    "resolveJsonModule": true,
+    "typeRoots": ["./node_modules/@types"]
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules"]
+}
