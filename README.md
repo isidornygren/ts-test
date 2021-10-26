@@ -27,3 +27,8 @@ For an example of a test file, look at the [`src/__tests__/test.test.ts`](src/__
 ## How to run Typescript tests
 
 You can run tests from typescript files by either compiling the tests first and then running the tests on the compiled files, or you could run this library using ts-node, see the `test-ts` script in [`package.json`](package.json) for an example.
+
+## Todo
+
+- Come up with a non-conflicting name
+- Publish

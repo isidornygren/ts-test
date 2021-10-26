@@ -3,6 +3,9 @@
   "version": "0.0.1",
   "description": "Typescript minimal testing suite",
   "main": "dist/index.js",
+  "bin": {
+    "ts-test": "./dist/index.js"
+  },
   "scripts": {
     "test": "npm run test-js && npm run test-ts",
     "test-js": "tsc --project tsconfig.build-test.json && node dist-test/src/index.js -- ./dist-test/src/**/*.test.js",
