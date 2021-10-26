@@ -14,12 +14,12 @@ export function testNotEqual(): void {
     assert.notEqual(4, 5);
 }
 
-export function testSuccessfullTest(): void {
+export function testSuccessfulTest(): void {
     assert.deepEqual(
         // eslint-disable-next-line no-empty-function, @typescript-eslint/no-empty-function
-        runTest(() => {}, "successfullTest"),
+        runTest(() => {}, "successfulTest"),
         {
-            funcName: "successfullTest",
+            funcName: "successfulTest",
             succeeded: true,
         }
     );
